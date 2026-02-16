@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Guide for My Hero 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- FRONT PAGE -->
+    <div id="home" class="page active">
+        <h1>Hej ljubavi 💕</h1>
+        <p>Napravila sam ti mali vodič da se nikad ne osećaš izgubljeno u teretani.</p>
+
+        <button onclick="showPage('trainings')">🏋️ Treninzi</button>
+        <button onclick="showPage('machines')">🏋️‍♂️ Sprave</button>
+        <button onclick="showPage('nutrition')">🥑 Ishrana</button>
+    </div>
+
+    <!-- TRENING -->
+    <div id="trainings" class="page">
+        <h2>Treninzi 💪</h2>
+
+        <button onclick="showPage('warmup')">🔥 Zagrevanje</button>
+        <button onclick="showPage('stretching')">🧘 Istezanje</button>
+        <button onclick="showPage('mainexercises')">🏆 Glavne vežbe</button>
+
+        <button class="back" onclick="showPage('home')">Nazad</button>
+    </div>
+
+    <!-- ZAGREVANJE -->
+    <div id="warmup" class="page">
+        <h2>Zagrevanje 🔥</h2>
+
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/warmup1.mp4" type="video/mp4">
+            </video>
+            <p>Lagano trčanje u mestu 1-2 minuta.</p>
+        </div>
+
+        <button class="back" onclick="showPage('trainings')">Nazad</button>
+    </div>
+
+    <!-- ISTEZANJE -->
+    <div id="stretching" class="page">
+        <h2>Istezanje 🧘</h2>
+
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/stretch1.mp4" type="video/mp4">
+            </video>
+            <p>Drži 20-30 sekundi, diši duboko.</p>
+        </div>
+
+        <button class="back" onclick="showPage('trainings')">Nazad</button>
+    </div>
+
+    <!-- GLAVNE VEZBE -->
+    <div id="mainexercises" class="page">
+        <h2>Glavne Vežbe 🏆</h2>
+
+        <h3>Upper Body</h3>
+        <ul>
+            <li>Push-ups</li>
+            <li>Bench Press</li>
+            <li>Lat Pulldown</li>
+            <li>Shoulder Press</li>
+            <li>Bicep Curls</li>
+            <li>Tricep Pushdown</li>
+        </ul>
+
+        <h3>Lower Body</h3>
+        <ul>
+            <li>Squats</li>
+            <li>Leg Press</li>
+            <li>Lunges</li>
+            <li>Romanian Deadlift</li>
+            <li>Hip Thrust</li>
+        </ul>
+
+        <h3>Full Body</h3>
+        <ul>
+            <li>Deadlift</li>
+            <li>Burpees</li>
+            <li>Kettlebell Swings</li>
+        </ul>
+
+        <button class="back" onclick="showPage('trainings')">Nazad</button>
+    </div>
+
+    <!-- SPRAVE -->
+    <div id="machines" class="page">
+        <h2>Sprave 🏋️‍♂️</h2>
+
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/latpulldown.mp4" type="video/mp4">
+            </video>
+            <p>Lat Pulldown – povuci šipku do grudi, ne zamahuj.</p>
+        </div>
+
+        <button class="back" onclick="showPage('home')">Nazad</button>
+    </div>
+
+    <!-- ISHRANA -->
+    <div id="nutrition" class="page">
+        <h2>Ishrana 🥑</h2>
+
+        <h3>Pre-workout</h3>
+        <p>Banana + jogurt ili ovsena kaša 60min pre treninga.</p>
+
+        <h3>Post-workout</h3>
+        <p>Proteini + ugljeni hidrati (piletina + pirinač).</p>
+
+        <h3>Kad da jedeš?</h3>
+        <p>3-5 obroka dnevno. Ne preskači doručak!</p>
+
+        <button class="back" onclick="showPage('home')">Nazad</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
