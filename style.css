@@ -56,3 +56,40 @@ video {
     width: 100%;
     border-radius: 15px;
 }
+.exercise {
+    margin: 12px 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.exercise-header {
+    padding: 14px;
+    background: #ff8fcf;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.exercise-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 12px;
+}
+
+.exercise-content.active {
+    padding: 12px;
+}
+
+.exercise-video {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.exercise-gif {
+    width: 100%;
+    border-radius: 15px;
+}
