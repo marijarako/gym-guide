@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Guide for My Hero 💖</title>
+    <title>You gotta go in the gym.. eh sorry</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,87 +12,244 @@
 
     <!-- FRONT PAGE -->
     <div id="home" class="page active">
-        <h1>Hej ljubavi 💕</h1>
-        <p>Napravila sam ti mali vodič da se nikad ne osećaš izgubljeno u teretani.</p>
+        <h1>Hejj ljubavi</h1>
+        <p>Sobzirom na to da mi se moj mali bubi plasi teretane, evo male pomoci.<br>
+        Ispod imas malo nekih <i>break the ice</i> saveta i slicno. <br> Hope it helpss :3</p>
 
-        <button onclick="showPage('trainings')">🏋️ Treninzi</button>
-        <button onclick="showPage('machines')">🏋️‍♂️ Sprave</button>
-        <button onclick="showPage('nutrition')">🥑 Ishrana</button>
+        <button onclick="showPage('trainings')">Treninzi</button>
+        <button onclick="showPage('machines')">Sprave</button>
+        <button onclick="showPage('nutrition')">Ishrana</button>
     </div>
 
     <!-- TRENING -->
     <div id="trainings" class="page">
-        <h2>Treninzi 💪</h2>
+        <h2>Treninzi</h2>
 
-        <button onclick="showPage('warmup')">🔥 Zagrevanje</button>
-        <button onclick="showPage('stretching')">🧘 Istezanje</button>
-        <button onclick="showPage('mainexercises')">🏆 Glavne vežbe</button>
-
+        <button onclick="showPage('warmup')">Zagrevanje</button>
+        <button onclick="showPage('stretching')">Istezanje</button>
+        <button onclick="showPage('mainexercises')">Glavne vežbe</button>
+<br>
         <button class="back" onclick="showPage('home')">Nazad</button>
     </div>
 
     <!-- ZAGREVANJE -->
     <div id="warmup" class="page">
-        <h2>Zagrevanje 🔥</h2>
-
+        <h2>Zagrevanje</h2>
+        <p>Just follow along :3</p> <br>
+        <p>Ponavljaj svaki pokret 10/15 puta, ili 15 sekundi.</p>
+        <button class="back" onclick="showPage('trainings')">Nazad</button>
         <div class="video-card">
+            <h4>1. Vrat</h4>
             <video autoplay loop muted playsinline>
-                <source src="videos/warmup1.mp4" type="video/mp4">
+                
+                <source src="videos/vratNaStranuWarmup.mp4" type="video/mp4">
             </video>
-            <p>Lagano trčanje u mestu 1-2 minuta.</p>
+            <p>Pomeraj sa uha na uho.</p>
         </div>
 
+        <div class="video-card">
+            
+            <video autoplay loop muted playsinline>
+                <source src="videos/vratLevoDesnoWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Pomeraj sa strane na stranu.</p>
+        </div>
+
+        <div class="video-card">
+            
+            <video autoplay loop muted playsinline>
+                <source src="videos/vratGoreDoleWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Pomeraj gore dole</p>
+        </div>
+
+        <div class="video-card">
+            
+            <video autoplay loop muted playsinline>
+                <source src="videos/vratUKrugWarmup.mp4" type="video/mp4">
+            </video>
+            <p>U krug na jednu, pa na drugu stranu.</p>
+        </div>
+
+        <div class="video-card">
+            <h4>2. Ruke</h4>
+            <video autoplay loop muted playsinline>
+                <source src="videos/desnaRukaKrugoviWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Desna ruka pun krug, u napred i u nazad.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/levaRukaKrugoviWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Leva ruka pun krug, u napred i u nazad.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/laktoviKrugoviWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Obe ruke vrti u laktovima, u jednu i u drugu stranu.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/zgloboviKrugoviWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Oba zgloba na rukama vrti u krug, u oba smera.</p>
+        </div>
+
+        <div class="video-card">
+            <h4>3. Gornja ledja i grudi</h4>
+            <video autoplay loop muted playsinline>
+                <source src="videos/grudniKosWarmup1.mp4" type="video/mp4">
+            </video>
+             <p>Pomeraj grudni kos napred nazad.
+                <br>Trudi se da se donji deo tela uopste ne pomera.
+                <br>Kada grudi idu u jednu stranu, ramena idu u suprotnu.
+             </p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/grudniKosWarmup2.mp4" type="video/mp4">
+            </video>
+            <p>Pomeraj grudni kos levo desno.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/grudniKosWarmup3.mp4" type="video/mp4">
+            </video>
+            <p>Spoji ovo. Grudni kos napred-u stranu-nazad-u stranu.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/grudniKosWarmup4.mp4" type="video/mp4">
+            </video>
+            <p>Spoj pun krug. Ovo sve ponovi u drugu stranu.</p>
+        </div>
+
+        <div class="video-card">
+            <h4>4. Kukovi</h4>
+            <video autoplay loop muted playsinline>
+                <source src="videos/kukoviUKrugWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Vrti kukove u krug. Prvo na jednu stranu pa na drugu.<br> Trudi se da ne pomeras centar ose (glavu).</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/naStranuKukoviWarmup.mp4" type="video/mp4">
+            </video>
+             <p>Sagni se na stranu i rukom se uhvati za svoju nogu za potporu.<br>
+                Drugu ruku prebaci preko glave. Ovo raditi na obe strane.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/kukoviPunKrugWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Rukama pravi pun krug od iznad glave do poda, sa tezistem u kukovima.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/NogaKrugWarmup.mp4" type="video/mp4">
+            </video>
+            <p>Uhvati se za nesto za stabilnost. Vrti nogu u krug iz kuka na obe strane.<br>
+            Ovo ponovi za drugu nogu.</p>
+        </div>
+
+        <div class="video-card">
+            <h4>4. Noge</h4>
+            <video autoplay loop muted playsinline>
+                <source src="videos/stopalaZgloboviWarmup.mp4" type="video/mp4">
+            </video>
+             <p>Vrti zglobove na nogama na obe strane.<br>Dizi se na prste naizmenicno.
+            <br>Dizi se na prse zajedno.</p>
+        </div>
+        <div class="video-card">
+            <video autoplay loop muted playsinline>
+                <source src="videos/cucanjWarmup.mp4" type="video/mp4">
+            </video>
+             <p>Istegni ruke iznad glave pa ih spusti na pod, zatim cucni.
+                <br>Ustani, podigni ruke, i tako u krug.
+             </p>
+        </div>
+        
+        <p>Preporucila bih jos 5-10 minuta trcanja na traci, ili stepenica :3<br>
+        Ukoliko ne planiras mnogo tezak i naporan trening,<br>
+        dovoljno je da trcis na traci, uz osnovno zagrevanje na traci (glava, ruke i kukovi). </p>
+
+
+<br>
         <button class="back" onclick="showPage('trainings')">Nazad</button>
     </div>
 
     <!-- ISTEZANJE -->
     <div id="stretching" class="page">
-        <h2>Istezanje 🧘</h2>
+        <h2>Istezanje</h2>
+        <button class="back" onclick="showPage('trainings')">Nazad</button>
 
         <div class="video-card">
-            <video autoplay loop muted playsinline>
-                <source src="videos/stretch1.mp4" type="video/mp4">
-            </video>
+            <img src="videos/Calf_Stretch_1.gif" class="exercise-gif" alt="Istezanje">
             <p>Drži 20-30 sekundi, diši duboko.</p>
         </div>
-
+<br>
         <button class="back" onclick="showPage('trainings')">Nazad</button>
     </div>
 
     <!-- GLAVNE VEZBE -->
-    <div id="mainexercises" class="page">
-        <h2>Glavne Vežbe 🏆</h2>
+<div id="mainexercises" class="page">
+    <h2>Glavne Vežbe</h2>
+    <button class="back" onclick="showPage('trainings')">Nazad</button>
+    <p>Ovo su vezbice bez sprava, za to kako rade sprave, pogledaj sekciju "sprave"</p>
+    <p>Klikni na vezbu koja te zanima :3</p>
+    <h3>GORNJI DEO TELA</h3>
 
-        <h3>Upper Body</h3>
-        <ul>
-            <li>Push-ups</li>
-            <li>Bench Press</li>
-            <li>Lat Pulldown</li>
-            <li>Shoulder Press</li>
-            <li>Bicep Curls</li>
-            <li>Tricep Pushdown</li>
-        </ul>
 
-        <h3>Lower Body</h3>
-        <ul>
-            <li>Squats</li>
-            <li>Leg Press</li>
-            <li>Lunges</li>
-            <li>Romanian Deadlift</li>
-            <li>Hip Thrust</li>
-        </ul>
+    <h5>🔴 PUSH</h5>
 
-        <h3>Full Body</h3>
-        <ul>
-            <li>Deadlift</li>
-            <li>Burpees</li>
-            <li>Kettlebell Swings</li>
-        </ul>
-
-        <button class="back" onclick="showPage('trainings')">Nazad</button>
+    <div class="exercise">
+        <div class="exercise-header" onclick="toggleExercise(this)">
+            Sklek (Push-up)
+        </div>
+        <div class="exercise-content">
+            <video loop muted playsinline class="exercise-video">
+                <source src="videos/pushup.mp4" type="video/mp4">
+            </video>
+            <p><b>Mišići:</b> Grudi, triceps, prednje rame</p>
+            <p><b>Forma:</b> Telo prava linija, laktovi ~45°, kontrolisan silazak.</p>
+        </div>
     </div>
 
-    <!-- SPRAVE -->
+    <div class="exercise">
+        <div class="exercise-header" onclick="toggleExercise(this)">
+            Dipsevi
+        </div>
+        <div class="exercise-content">
+            <video loop muted playsinline class="exercise-video">
+                <source src="videos/dips.mp4" type="video/mp4">
+            </video>
+            <p><b>Mišići:</b> Triceps, grudi</p>
+            <p><b>Forma:</b> Ramena spuštena, kontrolisan silazak, bez zaključavanja laktova.</p>
+        </div>
+    </div>
+
+    <h5>🔵 PULL</h5>
+
+    <div class="exercise">
+        <div class="exercise-header" onclick="toggleExercise(this)">
+            Zgibovi
+        </div>
+        <div class="exercise-content">
+            <video loop muted playsinline class="exercise-video">
+                <source src="videos/pullup.mp4" type="video/mp4">
+            </video>
+            <p><b>Mišići:</b> Leđa, biceps</p>
+            <p><b>Forma:</b> Povuci laktove ka dole, bez zamaha, kontrolisan silazak.</p>
+        </div>
+    </div>
+
+
+    <button class="back" onclick="showPage('trainings')">Nazad</button>
+</div>
+
+ <!-- SPRAVE -->
     <div id="machines" class="page">
         <h2>Sprave 🏋️‍♂️</h2>
 
